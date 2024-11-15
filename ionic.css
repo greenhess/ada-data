@@ -1,0 +1,76 @@
+  /* Alapértelmezett világos mód színek */
+  :root {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-icon-color: #000000;
+  }
+
+  /* Sötét mód színek */
+  [data-theme="dark"] {
+    --ion-background-color: #1e1e1e;
+    --ion-text-color: #ffffff;
+    --ion-toolbar-background: #333333;
+    --ion-toolbar-text-color: #ffffff;
+    --ion-icon-color: #ffffff;
+  }
+
+  body {
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+  }
+
+  ion-toolbar {
+    background-color: var(--ion-toolbar-background);
+    color: var(--ion-toolbar-text-color);
+    padding-right: 10px;
+  }
+
+  ion-icon {
+    color: var(--ion-icon-color);
+  }
+
+  ion-item {
+    --color: var(--ion-text-color);
+  }
+
+  .profile-section {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-section img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Tartalmak alapértelmezett rejtése */
+  .content-page {
+    display: none;
+  }
+
+  /* Aktív tartalom megjelenítése */
+  .active {
+    display: block;
+  }
+
+  /* Sötét módban a kártya címe és alcíme */
+  [data-theme="dark"] ion-card-title {
+    color: #ffffff;
+  }
+
+  [data-theme="dark"] ion-card-subtitle {
+    color: #cccccc;
+  }
+  
+  
+  
+  
+
+ /* Grid beállítás a kártyák rugalmas elhelyezéséhez */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr)); /* Rugalmas oszlopok, minimum szélesség 180px */
+  gap: 16px; /* Távolság a kártyák között */
+}
+
